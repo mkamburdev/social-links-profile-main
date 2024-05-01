@@ -1,0 +1,142 @@
+$font-family: "Inter", sans-serif;
+$font-weight-normal: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+$color-green: hsl(75, 94%, 57%);
+$color-white: hsl(0, 0%, 100%);
+$color-grey: hsl(0, 0%, 20%);
+$color-dark-grey: hsl(0, 0%, 12%);
+$color-off-black: hsl(0, 0%, 8%);
+
+$mobile: 375px;
+
+body {
+    font-family: $font-family;
+    background-color: $color-off-black;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+ 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    h1 {
+      font-size: 1.5em;
+      font-weight: $font-weight-normal;
+    }
+ 
+    p {
+      font-size: 0.875em;
+      font-weight: $font-weight-normal;
+    }
+ 
+  .location-pin {
+      font-size: 0.875em;
+      font-weight: $font-weight-semi-bold;
+      color: $color-green;
+    }
+ 
+    img {
+      max-width: 100%;
+    }
+ 
+  .profile-card {
+      width: 20.5rem;
+      background-color: $color-dark-grey;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6875rem;
+      text-align: center;
+      border-radius: 10px;
+ 
+      @media (min-width: 768px) {
+         width: 24.0625rem;
+         padding: 2.5rem;
+      }
+ 
+     .avatar-thumbnail {
+         border-radius: 100%;
+         width: 88px;
+         height: 88px;
+      }
+ 
+     .bio-description {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         row-gap: 1.5rem;
+      }
+ 
+     .info-box {
+         display: flex;
+         flex-direction: column;
+         gap: 0.875rem;
+      }
+ 
+     .links-box {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         row-gap: 1rem;
+ 
+         a {
+            background-color: $color-grey;
+            color: $color-white;
+            border-radius: 10px;
+            padding: 0.875rem;
+            font-size: 0.875em;
+            font-weight: $font-weight-semi-bold;
+            text-decoration: none;
+ 
+            &:hover,
+            &:focus {
+              background-color: $color-green;
+              color: $color-off-black;
+            }
+         }
+      }
+    }
+ 
+  .credit {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-bottom: 5px;
+      transform: translateX(-50%);
+      text-align: center;
+      width: 100%;
+      font-size: 0.75em;
+      color: $color-white;
+ 
+      a {
+         color: $color-green;
+ 
+         &:visited {
+            color: $color-green;
+         }
+      }
+    }
+
+	 @media (max-width: $mobile) {
+		body {
+		  font-size: 0.875em;
+		}
+	 
+		.profile-card {
+		  width: 100%;
+		  padding: 1rem;
+		}
+	 
+		h1 {
+		  font-size: 1.2em;
+		}
+	 }
+ }
