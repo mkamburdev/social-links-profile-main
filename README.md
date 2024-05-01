@@ -24,13 +24,12 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
-![](./src/assets/images/screenshot.png)
+![](./src/assets/images/social-responsive.png)
 
 ### Links
 
-- Solution URL: [URL here]()
-- Live Site URL: [URL here]()
+- Solution URL: [URL here](https://www.frontendmentor.io/solutions/social-links-profile-scss-flexbox-14YRlXR7zo)
+- Live Site URL: [URL here](https://social-links-profile-main-five-delta.vercel.app/)
 
 ## My process
 
